@@ -13,12 +13,12 @@ class Router
 
     public function isApicall()
     {
-        $uri = parse_url($_SERVER['REQUESR_URI'], PHP_URL_PATH);
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $path = explode('/', $uri);
         return array_search('api', $path);
     }
 
-    public function getREsourceTd()
+    public function getResourceTd()
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $path = explode('/', $uri);
