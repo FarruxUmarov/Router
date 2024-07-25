@@ -1,0 +1,15 @@
+{
+    "name": "farrux/api",
+    "authors": [
+        {
+            "name": "Farrukh",
+            "email": "adler4313@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "."
+        ]
+    }
+}
