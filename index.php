@@ -9,7 +9,7 @@ $router = new Router();
 if ($router->isApiCall()){
     if ($_SERVER['REQUEST_METHOD'] == 'GET'){
         if ($router->getREsourceTd()) {
-            echo 'Task' . $router->getREsourceTd();
+            echo 'Task' . $router->getResourceTd();
             return;
         }
         echo 'all tasks';
@@ -26,5 +26,8 @@ if ($router->isApiCall()){
 }
 
 if ($router->isTelegramUpdate()) {
-    
+    echo "telegram OK";
+    return;
 }
+
+echo "WEB OK";
